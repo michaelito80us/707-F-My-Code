@@ -1,0 +1,21 @@
+<!--pages/stories/new.wxml-->
+<!--pages/stories/new.wxml-->
+
+<view style="padding:50rpx">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="page-section-title">Name</view>
+      <view style="margin: 30rpx 0" >
+        <input class="input" name="name" placeholder="name" />
+      </view>
+
+    <view class="page-section-title">Text:</view>
+      <view style="margin: 30rpx 0" >
+        <textarea class="input" placeholder="form to hit the target textarea" name="text" />
+      </view>
+
+    <view class="btn-area">
+      <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button>
+      <button style="margin: 30rpx 0" formType="reset">Reset</button>
+    </view>
+  </form>
+</view>  

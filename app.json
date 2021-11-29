@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/landing/landing",
+    "pages/stories/index",
+    "pages/stories/new"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "F*** My Code",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#B2B2B2",
+    "selectedColor": "#7B1729",
+    "list": [
+      {
+        "pagePath": "pages/stories/index",
+        "text": "STORIES"
+      },
+      {
+        "pagePath": "pages/stories/new",
+        "text": "NEW POST"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

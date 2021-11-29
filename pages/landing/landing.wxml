@@ -1,0 +1,11 @@
+<!--pages/landing/landing.wxml-->
+<view class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://wallpapercave.com/wp/wp5881576.jpg);">
+  <view class="container">
+    <view style="display: flex; flex-direction: column; align-items: center;">
+      <view class="h1" style="margin-bottom: 30rpx;">Fxxk My Code!</view>
+      <view class="p" style="margin-bottom: 50rpx; width: 80%; text-align: center;">Horror (or funny) stories of your life as a coder</view>
+    </view>
+    <view bindtap="goToIndex" class="btn" url="/pages/stories/stories">check them out</view>
+  </view>
+</view>
+

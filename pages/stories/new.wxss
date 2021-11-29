@@ -1,0 +1,7 @@
+/* pages/stories/new.wxss */
+
+.input{
+  border: 1px solid black;
+  padding: 20rpx;
+  border-radius: 4px;
+}
