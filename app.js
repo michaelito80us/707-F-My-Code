@@ -14,19 +14,7 @@ App({
     })
   },
   globalData: {
-    stories: [
-      {
-        name: "I hate this class",
-        text: "they make me study every weekend"
-      },
-      {
-        name: "I love this class",
-        text: "they make me study every weekend"
-      },
-      {
-        name: "My dog ate my homework",
-        text: "thats why i didn't finish the challenge"
-      }
-    ]
+    baseUrl: 'http://localhost:3000/api/v1',
+    // baseUrl: 'your production url'
   }
 })

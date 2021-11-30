@@ -10,13 +10,21 @@ Page({
 
   },
 
-  formSubmit(e){
+  sendDataToBack(e){
 
     console.log(e)
     const name = e.detail.value.name
     const text = e.detail.value.text
 
-    app.globalData.stories.push({name: name, text: text})
+    // const story = {name: name, text: text}
+    const story = {name, text}
+
+    wx.request({
+      url: `${getApp().globalData.baseUrl}/stories`,
+      method: 'POST',
+      data: {story}
+    })
+    // app.globalData.stories.push({name: name, text: text})
     // simple way to push a post to the stories array in globalData
 
     wx.switchTab({

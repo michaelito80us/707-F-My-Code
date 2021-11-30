@@ -31,7 +31,15 @@ Page({
    */
   onShow: function () {
     const page = this
-    page.setData({stories: app.globalData.stories })
+    wx.request({
+
+      url: `${getApp().globalData.baseUrl}/stories`,
+      success(res){
+        console.log(res.data)
+        page.setData(res.data)
+      }
+    })
+
 
   },
 

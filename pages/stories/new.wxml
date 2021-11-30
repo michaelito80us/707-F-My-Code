@@ -2,7 +2,7 @@
 <!--pages/stories/new.wxml-->
 
 <view style="padding:50rpx">
-  <form catchsubmit="formSubmit" catchreset="formReset">
+  <form catchsubmit="sendDataToBack" catchreset="formReset">
     <view class="page-section-title">Name</view>
       <view style="margin: 30rpx 0" >
         <input class="input" name="name" placeholder="name" />

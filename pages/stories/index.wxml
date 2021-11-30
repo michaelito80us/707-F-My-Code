@@ -3,7 +3,7 @@
   stories
 </view>
 
-<view wx:for="{{stories}}" wx:for-item="story" wx:for-index="i" class="card-product">
+<view wx:for="{{stories}}" wx:for-item="story" wx:for-index="i" wx:key="unique" class="card-product">
   <view class="card-product-infos">
     <view class="h2">{{story.name}}</view>
     <view class="p">{{story.text}}</view>
