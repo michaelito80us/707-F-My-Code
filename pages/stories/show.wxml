@@ -1,0 +1,5 @@
+<!--pages/stories/show.wxml-->
+<view style="font-size: 60rpx;">{{story.name}}</view>
+<view>{{story.text}}</view>
+<view>{{story.date}}</view>
+<button bindtap="deleteStory">Delete story</button>
