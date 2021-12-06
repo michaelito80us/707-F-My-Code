@@ -33,8 +33,8 @@ Page({
       confirmText: "Yes",
       cancelText: "No",
       success(res) {
-        if(res.confirm){
-          
+        if (res.confirm) {
+
           wx.request({
             url: `${getApp().globalData.baseUrl}/stories/${page.data.options.id}`,
             method: 'DELETE',
@@ -46,7 +46,7 @@ Page({
                   setTimeout(page.switchToIndex, 500)
                 }
               })
-  
+
             }
           })
         }
