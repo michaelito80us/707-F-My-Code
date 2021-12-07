@@ -18,9 +18,15 @@ Page({
 
   onShow: function () {
     const page = this
+    const auth = wx.getStorageSync('auth')
+    const header = {
+      'X-User-Email': auth.email,
+      'X-User-Token': auth.token
+    }
     wx.request({
 
       url: `${getApp().globalData.baseUrl}/stories`,
+      header,
       success(res){
         console.log(res.data)
         page.setData(res.data)
